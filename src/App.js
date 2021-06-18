@@ -1,14 +1,12 @@
-import './App.css';
 import HeaderLayout from './components/HeaderLayout';
-//import { createUrl } from './services/http.service';
+import NewsComponent from './components/NewsComponent';
 
 function App() {
 
   return (
     <div>
       <HeaderLayout>
-        <h1>Welcome to Flyin' News!
-        </h1>
+        <NewsComponent />
       </HeaderLayout>
     </div>
   );

@@ -22,7 +22,7 @@ import BarChartIcon from '@material-ui/icons/BarChart';
 import SearchIcon from '@material-ui/icons/Search';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import MoreIcon from '@material-ui/icons/MoreVert';
-import { Apps, Devices, Home, Language, Movie, SportsSoccer } from '@material-ui/icons';
+import { Apps, Devices, Home, Language, LocationOn, Movie, SportsSoccer, SquareFoot } from '@material-ui/icons';
 
 const drawerWidth = 240;
 
@@ -141,13 +141,18 @@ const useStyles = makeStyles((theme) => ({
     }),
     marginLeft: 0,
   },
+  footer: {
+    padding: theme.spacing(3, 2),
+    marginTop: 'auto',
+    backgroundColor:
+      theme.palette.type === 'light' ? theme.palette.grey[200] : theme.palette.grey[800],
+  },
 }));
-
 
 const HeaderLayout = ({ children }) => {
     const classes = useStyles();
     const theme = useTheme();
-    const [open, setOpen] = React.useState(false);
+    const [open, setOpen] = React.useState(true);
     const [anchorEl, setAnchorEl] = React.useState(null);
     const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
     const isMenuOpen = Boolean(anchorEl);
@@ -327,9 +332,21 @@ const HeaderLayout = ({ children }) => {
                     </ListItem>
                     <ListItem button>
                         <ListItemIcon>
+                            <LocationOn />
+                        </ListItemIcon>
+                        <ListItemText primary="Local News" />
+                    </ListItem>
+                    <ListItem button>
+                        <ListItemIcon>
                             <Devices />
                         </ListItemIcon>
                         <ListItemText primary="Tech News" />
+                    </ListItem>
+                    <ListItem button>
+                        <ListItemIcon>
+                            <SquareFoot />
+                        </ListItemIcon>
+                        <ListItemText primary="Science News" />
                     </ListItem>
                     <ListItem button>
                         <ListItemIcon>
@@ -354,7 +371,8 @@ const HeaderLayout = ({ children }) => {
                 <div className={classes.drawerHeader} />
                 { children }
             </main>
-    </div>
+            
+        </div>
     );
 }
 

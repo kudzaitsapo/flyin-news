@@ -4,6 +4,8 @@ Welcome to the Flyin' news website. This project was done to show case UI / UX s
 
 ![Screen Shot of Website](https://raw.githubusercontent.com/kudzaitsapo/flyin-news/master/flyin_news_scr_1.png)
 
+![Screen Shot of Website](https://raw.githubusercontent.com/kudzaitsapo/flyin-news/master/flyin_news_scr_2.png)
+
 
 ## How to run
 

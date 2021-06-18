@@ -6,22 +6,12 @@ Welcome to the Flyin' news website. This project was done to show case UI / UX s
 
 ![Screen Shot of Website](https://raw.githubusercontent.com/kudzaitsapo/flyin-news/master/flyin_news_scr_2.png)
 
+## How to run the project
 
-## How to run
+- Get an api key from [https://newsapi.org](https://newsapi.org/) by registering for a free account.
+- Create a `.env` file in the root directory and copy the contents of the `.env.example` file into it. Change the `REACT_APP_NEWS_API_KEY` so that it matches the one you got above.
+- Run `npm install` 
+- Once the process is finished, then simply run `npm start` which will open the project in the browser automatically.
 
-In the project directory, you can run:
-
-### `yarn start` or `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-
-### `yarn build` or `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Have questions? Good for you!
+> Just have fun!
